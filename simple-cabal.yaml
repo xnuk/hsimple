@@ -1,0 +1,16 @@
+name: simple-cabal
+version: 0.1.0.0
+
+all:
+    extension:
+        - PackageImports
+
+lib:
+    src: src/
+    expose:
+        - '*'
+    depend:
+        base: '<5 && >=4.7'
+exe:
+    name: simple-cabal
+    src: app/
